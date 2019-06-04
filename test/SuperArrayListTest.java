@@ -14,11 +14,11 @@ class SuperArrayListTest {
 		list.add('c');
 		list.add(true);
 		list.add(7);
-		list.pop();
+		assertEquals(7, list.pop());
 		assertEquals(4, list.size());
 		list.add(5);
 		list.add(6);
-		list.pop();
+		assertEquals(6, list.pop());
 		assertEquals(5, list.size());
 
 	}
